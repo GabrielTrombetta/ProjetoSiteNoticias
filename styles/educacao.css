@@ -71,53 +71,70 @@ nav ul li a:hover {
     color: black;
 }
 
-#title-primary {
-    position: relative;
-    margin-top: 100px;
+#icone-selecionado {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.central {
+    padding-top: 120px ;
+    max-width: 1200px;
     text-align: center;
-    width: 100%;
-    font-size: 2rem;
+    margin: 0 auto;
+}
+
+.title-central h2{
+    padding: 20px;
+    font-size: 2.5rem;
     font-family: 'Times New Roman', Times, serif;
     text-decoration: underline;
-    padding: 20px 0px;
-}
-
-#title-primary h2 {
-    background-color: rgba(0, 0, 0,0.1);
+    padding: 20px 0px; 
+    max-width:1000px; 
+    background-color: rgba(0, 140, 255, 0.3); 
     margin: 0 auto;
-    width: fit-content;
-    padding: 1% 15%;
-    border-radius: 20px;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);  
+    
 }
 
-.corpo-central {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    max-width: 1000px;
-    min-width: 440px;
-    align-content: center;
-    padding-bottom: 30px;
-    background-color: rgba(0, 0, 0,0.1);
-    border-radius: 5px;
-}
-
-.noticias {
+.grid-noticias{
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    border:groove 1px;
-    border-radius: 10px;
-    margin: 5px;
-    padding: 5px;
-    width: 300px;
-    background-color: white;
+    padding-top: 10px;
+    max-width: 1200px;
 }
 
-.noticia-foto img {
+.noticia {
+    display: inline;
+    background-color: rgba(169, 169, 169,0.2);
+    padding: 15px;
+    margin: 10px 2px;
     width: 100%;
+}
+
+.img-noticia{
+    max-width: 200px;
+    float: left;
+}
+
+.img-noticia img{
+    width: 100%;
+    border: solid 1px;
+}
+
+.info-noticia{
+    text-align: start;
+    margin-left: 200px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.titulo-noticia{
+    padding:10px;
+    font-size: 2em;
+}
+
+.conteudo-noticia{
+    margin-left: 10px;
+    font-size: 1.2em;
 }
 
 footer {
@@ -149,6 +166,4 @@ footer div{
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-
 
