@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/cabecalho-rodape.css">
-    <link rel="stylesheet" href="styles/secoes.css">
-    <link rel="stylesheet" href="styles/formulario.css">
+    <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <title>Saúde</title>
+    <title>Login</title>
 </head>
 <body>
     <div id="container">
@@ -29,38 +28,31 @@
             </nav>
         </header>
         <section id="main-content">
-            <h1>Formulario para contato:</h1>
+            <h1>Faça o login:</h1>
             <div class="center-page">
-                <form>                
-                    <div>
-                        <h3>Preencha os dados:</h3>
-                    </div>
-                    <div>
-                        <div class="labels">
-                            <label for="nome">Nome:</label>
-                        </div>
-                        <div class="boxes">
-                            <input type="text" name="nome" id="nome">
-                        </div>
-                    </div>
+                <form>       
                     <div>
                         <div class="labels">
                             <label for="email">E-mail:</label>
                         </div>
                         <div class="boxes">
-                            <input type="email" name="email" id="email">
+                            <input type="text" name="email" id="emailBoxId" placeholder="exemplo@gmail.com">
                         </div>
                     </div>
                     <div>
                         <div class="labels">
-                            <label for="comentarios">Comentários:</label>
+                            <label for="senha">Senha:</label>
                         </div>
-                        <div class="boxes" id="boxComentarios">
-                            <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>                            
+                        <div class="boxes">
+                            <input type="password" name="password" id="passBoxId">
                         </div>
                     </div>
-                    <div class="botao">
-                        <input type="submit" value="Enviar">
+                    <div class="botao">                        
+                        <input type="submit" value="Logar" >
+                    </div>
+                    <div id="cadastro">
+                        <p>Não possui conta? Clique abaixo para Cadastrar</p>
+                        <input type="button" value="Cadastrar" onclick="location.href='cadastro.html';">
                     </div>
                 </form>
             </div>

@@ -1,0 +1,70 @@
+section#main-content .center-page{
+    max-width: 1200px;
+    min-width: 220px;
+    margin: 10px auto 50px auto;
+    height: 100%;
+    border-radius: 15px;
+}
+
+div.center-page .noticia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px black;
+    min-height: 330px;
+    position: relative;
+}
+
+div.center-page .noticia-titulo h3{
+    font-size: 2.6em;
+    padding: 20px;
+    width: 1000px;
+    text-align:center;
+}
+
+div.center-page .noticia-foto {
+    max-width: 800px;
+    margin-right: 10px;
+    margin-bottom: -4px;
+}
+
+div.center-page .noticia-foto img{
+    width: 100%;
+    max-height: 330px;
+    object-fit: cover;
+}
+
+div.center-page .noticia-text{
+    margin: 10px;
+}
+div.center-page .noticia-text p{
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+div.center-page .noticia-autor{
+    text-align: end;
+    width: 100%;
+    margin-right: 120px;
+    margin-bottom: 8px;
+}
+
+div.center-page .noticia-like{
+    position: absolute;
+    width: 30px;
+    right: 15px;
+    bottom: 5px;
+    cursor: pointer;    
+    transition:all 0.5s ease;
+}
+
+div.center-page .noticia-like:hover{
+    transform: rotate(-30deg);
+}
+
+div.center-page .noticia-like img{
+    width: 100%;
+}

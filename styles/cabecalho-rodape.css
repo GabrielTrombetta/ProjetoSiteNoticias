@@ -1,0 +1,111 @@
+nav#cabecalho {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background: #cb2d3e;
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e); 
+    background: linear-gradient(to right, #ef473a, #cb2d3e);
+    position: relative;
+    width: 100%;
+}
+
+nav#cabecalho h1 a{
+    color: black;
+    padding: 10px;
+    background-color: transparent;
+    margin-left: 25px;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-family: 'Girassol', sans-serif;
+}
+
+nav#cabecalho ul{
+    margin-right: 5px;
+    border-left: 3px solid black;
+    padding: 10px;
+}
+
+nav#cabecalho ul li{
+    display: inline;
+    margin: 5px 1px;
+}
+
+nav#cabecalho ul li a{
+    padding: 10px;
+    background-color: rgba(0, 0, 0,0.2);
+    color: white;
+    border-radius: 10px;
+}
+
+nav#cabecalho ul li a:hover{
+    text-decoration: underline;
+    background-color: white;
+    color: black;
+}
+
+#hamburguer{
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+/* -------- RODAPÉ DA PAGINA -------- */
+footer#rodape{
+    width: 100%;
+    background: #cb2d3e;
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e); 
+    background: linear-gradient(to right, #ef473a, #cb2d3e);
+    text-align: center;
+    height: 50px;
+    padding-top: 5px;
+    color: white;
+    position: relative;
+    bottom: 0px;
+}
+
+footer#rodape a{
+    padding: 2px;
+    font-style: italic;
+    color: white;
+}
+
+footer#rodape a:hover{
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 600px){
+    .nav-ul{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-ul.show{
+        display: flex;        
+    }
+
+    .nav-ul li{
+        padding: 10px;
+        width: 200px;
+        text-align: center;    
+    }
+
+    nav#cabecalho ul li a{
+        width: 100%;
+        padding: 10px 50px;
+    }
+
+
+    #hamburguer{
+        display:block;
+    }
+}

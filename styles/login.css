@@ -1,0 +1,56 @@
+div.center-page form{
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px black;
+    height: 667px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin: 0px auto 100px auto;
+}
+
+div.center-page form div{
+    margin: 10px 0px 10px 10px;
+}
+
+form div.boxes input{
+    width: 300px;
+    font-size: .8em;    
+}
+
+form #boxComentarios textarea{
+    font-size: .6em;
+}
+
+form .botao input{
+      font-size: 1em;
+      padding: 5px;
+      cursor: pointer;
+      width: 200px;
+}
+
+form div#cadastro{
+    text-align: center;
+}
+
+form div#cadastro p{
+    font-size: .5em;
+    margin-bottom: 15px;
+}
+
+form div#cadastro input{
+    font-size: .8em;
+    padding: 5px;
+    background: none;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+}
+
+form div#cadastro input:hover{
+    background-color: rgba(0, 0, 0,0.5);
+    color: white;
+}
+

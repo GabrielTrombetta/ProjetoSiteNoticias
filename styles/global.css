@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-family: 'PT Sans' ,sans-serif;
+}
+
+#container{
+    min-width: 220px;
+}
+
+section#main-content h1{
+    text-align: center;
+    width:fit-content;
+    font-size: 3em;
+    font-family: 'PT Sans', sans-serif;
+    margin: 15px auto;
+    border-bottom: 2px solid black;
+}
