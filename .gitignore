@@ -4,3 +4,6 @@ node_modules/
 #ignorar arquivos
 package-lock.json
 package.json
+.firebase
+.firebaserc
+firebase.json

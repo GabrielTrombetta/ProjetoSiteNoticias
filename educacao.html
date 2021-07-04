@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script type="text/javascript" src="scripts/env.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/cabecalho-rodape.css">
     <link rel="stylesheet" href="styles/secoes.css">
@@ -29,62 +34,8 @@
         </header>
         <section id="main-content">
             <h1>Educação</h1>
-            <div class="center-page">
-                <div class="noticia">
-                    <div class="noticia-titulo">
-                        <h3>"Só disse a verdade", diz Ernesto sobre acusações contra Kátia Abreu</h3>
-                    </div>
-                    <div class="noticia-foto">
-                        <img src="Imagens/Politica2.jpg" alt="">
-                    </div>
-                    <div class="noticia-text">
-                        <p> Na tarde desta terça-feira (18), o ex-ministro das Relações Exteriores Ernesto Araújo afirmou que não se arrepende de ter dito, em março deste ano, que a senadora Kátia Abreu teria interesses na participação da China na tecnologia 5G a ser instalada no Brasil.</p>
-
-                        <p>"Em referência que fiz ao comportamento de Kátia Abreu, eu apenas disse a verdade, relatei um fato. Jamais vou me arrepender de dizer a verdade", disse ele após ser questionado sobre uma possível retratação pelo senador Angelo Coronel (PSD-BA).</p>
-                        <p>Na época, Araújo revelou uma conversa que teve com a senadora. A acusação feita contra Kátia Abreu foi um dos fatores que elevou a pressão pela sua exoneração do cargo. "Conversa cortês. Pouco ou nada falou de vacinas. No final, à mesa, disse: 'Ministro, se o senhor fizer um gesto em relação ao 5G, será o rei do Senado.' Não fiz gesto algum", afirmou o ex-chanceler na época.</p>
-                    </div>
-                    <div class="noticia-autor">
-                        <h4>Autor</h4>
-                    </div>
-                    <div class="noticia-like">
-                        <img src="Imagens/gostar.png" alt="icone curtir">
-                    </div>
-                </div>
-                <div class="noticia">
-                    <div class="noticia-titulo">
-                        <h3>Moro: sensacionalismo de mensagens da Lava Jato favoreceram criminosos condenados</h3>
-                    </div>
-                    <div class="noticia-foto">
-                        <img src="Imagens/Politica1.webp" alt="Foto Moro">
-                    </div>
-                    <div class="noticia-text">
-                        <p> O ex-ministro da Justiça Sérgio Moro e a ex-candidata à vice-presidente Manuela D'Ávila (PCdoB) prestaram novos depoimentos nesta segunda-feira, 17, no processo aberto a partir das investigações da Operação Spoofing, que mirou a ação de hackers para a invasão e roubo de mensagens de celulares de autoridades, incluindo procuradores da força-tarefa da Lava Jato. Ambos foram ouvidos por videoconferência pelo juiz Ricardo Leite, da 10.ª Vara Federal de Brasília.</p>
-                        <p>Moro, que quando ainda era juiz federal ficou responsável pelos casos relacionados à Operação Lava Jato, foi um dos alvos do ataque cibernético e teve conversas com procuradores da força-tarefa vazadas. As mensagens foram exploradas no processo movido pelo ex-presidente Luís Inácio Lula da Silva (PT) para declarar o ex-juiz suspeito no processo do tríplex do Guarujá (SP), o que ocorreu em abril.</p>
-                    </div>
-                    <div class="noticia-autor">
-                        <h4>Autor</h4>
-                    </div>
-                    <div class="noticia-like">
-                        <img src="Imagens/gostar.png" alt="icone curtir">
-                    </div>
-                </div>
-                <div class="noticia">
-                    <div class="noticia-titulo">
-                        <h3>Titulo</h3>
-                    </div>
-                    <div class="noticia-foto">
-                        <img src="Imagens/imgVacina.jpg" alt="Foto Moro">
-                    </div>
-                    <div class="noticia-text">
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque fugiat laboriosam dignissimos laudantium itaque provident pariatur explicabo quis tenetur ad officiis fuga consequuntur quia, voluptate placeat expedita doloremque reiciendis.</p>
-                    </div>
-                    <div class="noticia-autor">
-                        <h4>Autor</h4>
-                    </div>
-                    <div class="noticia-like">
-                        <img src="Imagens/gostar.png" alt="icone curtir">
-                    </div>
-                </div>                           
+            <div class="center-page" id="center-page">
+                                
             </div>
         </section>
         <footer id="rodape">
@@ -95,6 +46,11 @@
             </div>        
         </footer>
     </div>
-    <script type="text/javascript" src="scripts/hamburguer.js"></script>
+    <script>
+        window.addEventListener("load", function(event) {
+            getDb('educacao');
+        });
+      </script>
+      <script type="text/javascript" src="scripts/hamburguer.js"></script>
 </body>
 </html>

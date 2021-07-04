@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
     <script type="text/javascript" src="scripts/env.js"></script>
     <script type="text/javascript" src="scripts/script.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/cabecalho-rodape.css">
-    <link rel="stylesheet" href="styles/login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <title>Login</title>
+    <link rel="stylesheet" href="styles/secoes.css">
+    <title>Add Noticias</title>
 </head>
 <body>
     <div id="container">
@@ -33,34 +32,40 @@
             </nav>
         </header>
         <section id="main-content">
-            <h1>Faça o login:</h1>
+            <h1>Cadastro de Novas Notícias:</h1>
             <div class="center-page">
-                <form>       
+                <form>      
                     <div>
-                        <div class="labels">
-                            <label for="email">E-mail:</label>
-                        </div>
-                        <div class="boxes">
-                            <input type="text" name="email" id="emailLoginId" placeholder="exemplo@gmail.com">
-                        </div>
-                    </div>
+                        <label>TagNoticia:</label>
+                        <br>
+                        <select name="tags" id="tagNoticia">
+                            <option value="politica">Politica</option>
+                            <option value="saude">Saúde</option>
+                            <option value="educacao">Educação</option>
+                        </select>
+                    </div>          
                     <div>
-                        <div class="labels">
-                            <label for="senha">Senha:</label>
-                        </div>
-                        <div class="boxes">
-                            <input type="password" name="password" id="passLoginId">
-                        </div>
-                    </div>
-                    <div class="botao">                        
-                        <input type="submit" value="Logar" onclick="authenticateUser(event);" >
-                    </div>
-                    <div id="cadastro">
-                        <p>Não possui conta? Clique abaixo para Cadastrar</p>
-                        <input type="button" value="Cadastrar" onclick="location.href='cadastro.html';">
+                        <label>Titulo:</label>
+                        <br>
+                        <textarea name="titulo" id="tituloNoticia" cols="50" rows="5"></textarea>
                     </div>
                     <div>
-                        <p id="messageLogin"></p>
+                        <label>Imagem URL:</label>
+                        <br>
+                        <input type="text" name="urlImg" id="imgNoticia">
+                    </div>
+                    <div>
+                        <label>Conteudo da noticia:</label>
+                        <br>
+                        <textarea name="textNoticia" id="textNoticia" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <label>Autor:</label>
+                        <br>
+                        <input type="text" name="autor" id="autorNoticia">
+                    </div>
+                    <div>
+                        <button type="submit" onclick="storeNoticia(event);">Adicionar</button>
                     </div>
                 </form>
             </div>
